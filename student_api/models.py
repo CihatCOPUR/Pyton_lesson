@@ -17,4 +17,4 @@ class Student(models.Model):  # lower_case modelname_set
     age = models.IntegerField()
 
     def __str__(self):
-        return f"{self.number}-{self.last_name} {self.first_name}"
+        return f"{self.number}---{self.last_name}    {self.first_name}"
