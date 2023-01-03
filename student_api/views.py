@@ -9,7 +9,7 @@ from rest_framework import status
 
 
 @api_view()  # default GET
-def home(requst):
+def home(request):
     return Response({'home': 'This is home page...'})
 
 
