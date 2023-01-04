@@ -7,11 +7,18 @@
     {% endfor %}
    
 </ul>
-
-
+<div>
+{%  for film in filmler %}
+<h1>{{film.film_adi}}</h1>
+{% endfor %}
+</div>
 <div id="filmler">
     {%  for film in filmler %}
-    <p>{{film}}</p>
+    <div>
+        <p>{{  film.film_adi  }}</p>
+        <p>{{  film.aciklama  }}</p>
+        <img src="{{ film.resim }}" alt="">
+    </div>
     {% endfor %}
    
 </div>
