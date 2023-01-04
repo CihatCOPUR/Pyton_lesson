@@ -1,0 +1,17 @@
+<h1>HOME PAGE</h1>
+
+
+<ul>
+    {%  for kategori in kategoriler %}
+    <li>{{kategori}}</li>
+    {% endfor %}
+   
+</ul>
+
+
+<div id="filmler">
+    {%  for film in filmler %}
+    <p>{{film}}</p>
+    {% endfor %}
+   
+</div>
